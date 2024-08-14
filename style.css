@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sticky Navbar */
+header {
+    background-color: #fff; /* White background for navbar */
+    padding: 15px;
+    color: #003366; /* PES University Blue for text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styles */
+.brand-logo-name img {
+    width: 150px;
+}
+
+.navbar-lists {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #003366; /* Blue text color for navbar links */
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #00509E; /* Slightly lighter blue */
+    border-radius: 5px;
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive Navbar */
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-lists {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fff; /* White background for mobile menu */
+    }
+
+    .navbar-lists.responsive {
+        display: flex;
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Image Banner */
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.school-img {
+    width: 100%;
+    height: auto;
+}
+
+.img-title {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about-us-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.aboutus-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.about-us-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Vision Section */
+#vision {
+    background-color: #003366;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#vision p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Notices and Events Section */
+.main-notice-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.notice-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.notice-bord, .event-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notice-bord h2, .event-card h2 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.notice-bord ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notice-bord li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.notice-bord img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.event-heading {
+    color: #003366;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    color: #00509E;
+    font-size: 1.5rem;
+}
+
+.event p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #00509E;
+}
+
+/* Location Section */
+.our-school-map {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.location-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+iframe {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}

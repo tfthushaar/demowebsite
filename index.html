@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PES University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="brand-logo-name">
+            <img src="pes-logo.png" alt="PES University Logo"> 
+        </a>
+        <nav>
+            <ul id="myTopnav" class="navbar-lists">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#about-us-section" class="navbar-link">About Us</a></li>
+                <li><a href="#vision" class="navbar-link">Vision</a></li>
+                <li><a href="#notices" class="navbar-link">Notices</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </header>
+
+    <!-- Image Banner Section -->
+    <section class="img-container">
+        <img src="pes-university.jpg" alt="PES University" class="school-img">
+        <div class="img-title">Welcome to PES University</div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us-section">
+        <h2 class="aboutus-heading">About Us</h2>
+        <div class="about-us-container">
+            <p>PES University is one of the country’s leading teaching and research universities. The university is committed to providing “education for the real world” that inspires students to realize their potential.</p>
+            <p>At PES University, education is driven by a strong emphasis on academic excellence and research. Our vibrant campus culture encourages innovation and entrepreneurship.</p>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>To create a professionally superior and ethically strong global workforce.</p>
+    </section>
+
+    <!-- Notices and Events Section -->
+    <section class="main-notice-section">
+        <div class="notice-container">
+            <div class="notice-bord">
+                <h2>Notices</h2>
+                <ul>
+                    <li>
+                        <img src="notice-icon.png" alt="Notice Icon"> 
+                        <p>End Semester Exams begin from 25th September.</p>
+                    </li>
+                    <li>
+                        <img src="notice-icon.png" alt="Notice Icon">
+                        <p>Admissions open for 2024 batch.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="event-card">
+                <h2 class="event-heading">Upcoming Events</h2>
+                <div class="event-details">
+                    <div class="event">
+                        <h3>Tech Symposium</h3>
+                        <p>October 15th, 2024</p>
+                    </div>
+                    <div class="event">
+                        <h3>Sports Fest</h3>
+                        <p>November 5th, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Location Section -->
+    <section class="our-school-map">
+        <h2 class="location-heading">Our Location</h2>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31109.005119643103!2d77.56559498496008!3d12.92319825534857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13fd345d27eb%3A0x29c40bd8a9a5aa04!2sPES%20University!5e0!3m2!1sen!2sin!4v1630040132569!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border:0; border-radius: 10px;"
+        allowfullscreen=""
+        loading="lazy">
+        </iframe>
+        </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PES University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
